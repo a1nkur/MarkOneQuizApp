@@ -24,6 +24,14 @@ var questions = [{
 {
   question: "In Bengaluru where do i live? ",
   answer: "Marathahalli"
+},
+{
+  question: "Where is my home town? ",
+  answer: "Kolkata"
+},
+{
+  question: "Do you know my favorite show ",
+  answer: "The Office"
 }];
 
 function welcome() {
