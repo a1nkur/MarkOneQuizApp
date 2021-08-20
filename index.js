@@ -2,7 +2,6 @@ var readlineSync = require("readline-sync");
 
 var score = 0;
 
-// data of high score
 var highScores = [
   {
     name: "Kaustubh",
@@ -15,7 +14,6 @@ var highScores = [
   },
 ]
 
-// array of objects
 var questions = [{
   question: "Where do I live? ",
   answer: "Bengaluru"
@@ -35,11 +33,10 @@ function welcome() {
 }
 
 
-// play function
 function play(question, answer) {
   var userAnswer = readlineSync.question(question);
 
-  if (userAnswer.toUpperCase() === answer.toUpperCase()) { // branching
+  if (userAnswer.toUpperCase() === answer.toUpperCase()) { 
     console.log("right!");
     score = score + 1;
     
@@ -49,7 +46,7 @@ function play(question, answer) {
   }
 
   console.log("current score: ", score);
-  console.log("----------------------")
+  console.log("---------------------------")
 }
 
 function game() {
